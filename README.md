@@ -46,13 +46,15 @@ Uvicorn
 
 Project Structure (Current)
 attendance_service/
-└── app/
-    ├── main.py          # FastAPI app + routes
-    ├── database.py      # DB engine, session, Base
-    ├── models.py        # SQLAlchemy models
-    ├── schemas.py       # Pydantic schemas
-    └── attendance.db    # SQLite database (local)
-
+├── app/
+│   ├── __pycache__/             # auto-generated
+│   ├── database.py
+│   ├── main.py
+│   ├── models.py
+│   ├── schemas.py
+│   └── test.py                  # bad test scripts
+├── attendance.db
+└── requirements.txt
 
 Note: The project will be refactored into routers/services as authentication and complexity increase.
 
